@@ -1,5 +1,10 @@
 @charset "UTF-8";
+/*Polices*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Kaushan+Script&display=swap");
+/*Variables (couleurs)*/
 /*Reset*/
 body {
   margin: 0;
@@ -28,6 +33,14 @@ header a {
 }
 
 /*Bloc Menus*/
+#menus {
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  margin: 41.8px 67px 58.6px 67px;
+  justify-content: space-between;
+}
+
 .menus_ligne_1, .menus_ligne_2 {
   display: flex;
   justify-content: space-around;
@@ -39,6 +52,7 @@ header a {
   margin-top: 30px;
   margin-bottom: 30px;
   box-shadow: 1px 1px 15px #CCCCCC;
+  cursor: pointer;
 }
 
 .la_note_enchantee {
