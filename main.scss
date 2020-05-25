@@ -37,7 +37,7 @@ header {
 #menus {
     display: flex;
     flex-direction: column;
-    height: 840px;
+    height: 1000px;
     margin: 41.8px 67px 58.6px 67px;
     justify-content: space-between;
 }
@@ -55,15 +55,17 @@ header {
     margin-bottom: 30px;
     box-shadow: 1px 1px 15px $color_box_shadow;
     cursor: pointer;
+    height: 400px;
+    width: 280px;
 }
 
 .la_note_enchantee {
     font-family: $font-la_note_enchantee;
     background-color: $color_background_la_note;
-    padding: 70px 15px 85px 15px;
+    padding: 130px 15px 130px 15px;
     text-align: center;
     color: $color_la_note;
-
+     
     &_title {
         font-size: 2rem;
     }
@@ -75,50 +77,77 @@ header {
 }
 
 .le_chic_a_la_francaise {
-    font-family: $font-le_chic-le_delice;
-    padding: 110px 15px 110px 15px;
+    font-family: $font-le_chic;
+    padding: 150px 15px 150px 15px;
     background-color: $color_background_le_chic;
     text-align: center;
 
     &_title {
         font-size: 1.4rem;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e38a12+0,a768bc+51,b38cfa+100 */
+        background: #e38a12; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #e38a12 0%, #a768bc 51%, #b38cfa 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #e38a12 0%,#a768bc 51%,#b38cfa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e38a12', endColorstr='#b38cfa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip:text;
     }
 
     &_menu {
         font-size: 1.8rem;
+        color: $color_menu_le_chic;
     }
 }
 
 .le_delice_des_papilles {
-    font-family: $font-le_chic-le_delice;
-    padding: 110px 15px 125px 15px;
+    font-family: $font-le_delice;
+    padding: 160px 15px 160px 15px;
     background-color: $color_background_le_delice;
     text-align: center;
 
     &_title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0229dd+0,0889fb+100 */
+          background: #0229dd; /* Old browsers */
+          background: -moz-linear-gradient(left,  #0229dd 0%, #0889fb 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(left,  #0229dd 0%,#0889fb 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right,  #0229dd 0%,#0889fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0229dd', endColorstr='#0889fb',GradientType=1 ); /* IE6-9 */
+          -webkit-text-fill-color:transparent;
+          -webkit-background-clip:text;
     }
 
     &_menu {
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: $color_menu_le_delice;
+        font-family: $font_menu_le_delice-la_palette;
     }
 }
 
 .la_palette_du_gout {
     font-family: $font-la_palette;
-    padding: 110px 15px 110px 15px;
+    padding: 155px 15px 155px 15px;
     background-color: $color_background_la_palette;
     text-align: center;
     font-size: 1.3rem;
 
     &_title {
         font-size: 1.7rem;
+         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
+         background: #43973d; /* Old browsers */
+         background: -moz-linear-gradient(left,  #43973d 0%, #beff7f 100%); /* FF3.6-15 */
+         background: -webkit-linear-gradient(left,  #43973d 0%,#beff7f 100%); /*  Chrome10-25,Safari5.1-6 */
+         background: linear-gradient(to right,  #43973d 0%,#beff7f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43973d', endColorstr='#beff7f',GradientType=1 ); /* IE6-9 */
+         -webkit-text-fill-color:transparent;
+         -webkit-background-clip:text;
     }
 
     &_menu {
         font-size: 1.9rem;
         color: $color_menu_la_palette ;
+        font-family: $font_menu_le_delice-la_palette;
     }
 }
 
@@ -128,7 +157,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 
     &_title {
         padding: 15px 15px 15px 15px;

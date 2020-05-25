@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 /*Variables (couleurs)*/
 /*Reset*/
 body {
@@ -36,7 +38,7 @@ header a {
 #menus {
   display: flex;
   flex-direction: column;
-  height: 840px;
+  height: 1000px;
   margin: 41.8px 67px 58.6px 67px;
   justify-content: space-between;
 }
@@ -53,12 +55,14 @@ header a {
   margin-bottom: 30px;
   box-shadow: 1px 1px 15px #CCCCCC;
   cursor: pointer;
+  height: 400px;
+  width: 280px;
 }
 
 .la_note_enchantee {
   font-family: "Caveat", cursive;
   background-color: #FCDFDB;
-  padding: 70px 15px 85px 15px;
+  padding: 130px 15px 130px 15px;
   text-align: center;
   color: #613a3e;
 }
@@ -72,44 +76,86 @@ header a {
 
 .le_chic_a_la_francaise {
   font-family: "Croissant One", cursive;
-  padding: 110px 15px 110px 15px;
+  padding: 150px 15px 150px 15px;
   background-color: #fff5fe;
   text-align: center;
 }
 .le_chic_a_la_francaise_title {
   font-size: 1.4rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e38a12+0,a768bc+51,b38cfa+100 */
+  background: #e38a12;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#e38a12", endColorstr="#b38cfa",GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .le_chic_a_la_francaise_menu {
   font-size: 1.8rem;
+  color: #c77513;
 }
 
 .le_delice_des_papilles {
-  font-family: "Croissant One", cursive;
-  padding: 110px 15px 125px 15px;
+  font-family: "Dancing Script", cursive;
+  padding: 160px 15px 160px 15px;
   background-color: #f9f9f9;
   text-align: center;
 }
 .le_delice_des_papilles_title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0229dd+0,0889fb+100 */
+  background: #0229dd;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0229dd 0%, #0889fb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0229dd", endColorstr="#0889fb",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .le_delice_des_papilles_menu {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #6eb6fa;
+  font-family: "Kalam", cursive;
 }
 
 .la_palette_du_gout {
   font-family: "Kaushan Script", cursive;
-  padding: 110px 15px 110px 15px;
+  padding: 155px 15px 155px 15px;
   background-color: #fdfffd;
   text-align: center;
   font-size: 1.3rem;
 }
 .la_palette_du_gout_title {
   font-size: 1.7rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
+  background: #43973d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #43973d 0%, #beff7f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #43973d 0%, #beff7f 100%);
+  /*  Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#43973d", endColorstr="#beff7f",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .la_palette_du_gout_menu {
   font-size: 1.9rem;
   color: #a2d58f;
+  font-family: "Kalam", cursive;
 }
 
 /*Prochainement*/
@@ -118,7 +164,7 @@ header a {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 .prochainement_title {
   padding: 15px 15px 15px 15px;
