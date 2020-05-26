@@ -4,6 +4,14 @@
 /*Variables (couleurs)*/
 @import "./_variables.scss/";
 
+/*Animations*/
+@mixin transition_menu {
+    transition: transform 300ms cubic-bezier(.48,.01,.63,1.02);
+    opacity: 1; 
+    transform: scale(1.3);
+    opacity: 0.7;
+}
+
 /*Reset*/
 body {
     margin: 0;
@@ -102,7 +110,7 @@ header {
 
 .le_delice_des_papilles {
     font-family: $font-le_delice;
-    padding: 160px 15px 160px 15px;
+    padding: 155px 15px 155px 15px;
     background-color: $color_background_le_delice;
     text-align: center;
 
@@ -175,16 +183,111 @@ footer {
     background-color: $color_primary;
     color: $color_secondary;
     font-size: 2rem;
-    padding: 30px 30px 10px 0px;
+    padding: 20px 30px 10px 0px;
     position: fixed;
     bottom: 0px;
     width: 100%;
+    height: 40px;
 }
 
 .mentionslegales {
     margin-left: 30px;
+    cursor: pointer;
+    animation: wiggle 3s infinite;
 }
 
 .contactez-nous {
     margin-right: 30px;
+    cursor: pointer;
+    animation: wiggle 3s infinite;
+}
+
+/*Animation du menu*/
+
+.menu {
+
+    &:hover img {
+        @include transition_menu;
+    }
+
+    &:hover .le_chic_a_la_francaise_title {
+        @include transition_menu;
+    }
+
+    &:hover .la_note_enchantee_title {
+        @include transition_menu;
+    }
+
+    &:hover .le_delice_des_papilles_title {
+        @include transition_menu;
+    }
+
+    &:hover .la_palette_du_gout_title {
+        @include transition_menu;
+    }
+
+    &:hover .la_note_enchantee_menu {
+        @include transition_menu;
+    }
+
+    &:hover .le_chic_a_la_francaise_menu {
+        @include transition_menu;
+    }
+    &:hover .le_delice_des_papilles_menu {
+        @include transition_menu;
+    }
+    &:hover .la_palette_du_gout_menu {
+        @include transition_menu;
+    }
+}
+
+/* Animation des points*/
+
+.points
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 1%;
+    .point{
+        margin: 7px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $color_secondary;
+        &:nth-child(1){
+            animation:pulse 3s linear infinite;   
+        }
+        &:nth-child(2){
+            animation:pulse 3s linear infinite 200ms;   
+        }
+        &:nth-child(3){
+            animation:pulse 3s linear infinite 400ms;   
+        }
+    }
+}
+
+@keyframes pulse {
+    from, 
+    40% {
+        opacity: 0; 
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    80%,
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animation footer*/
+
+@keyframes wiggle {
+    0%{transform: rotate(0deg)}
+    3%{transform: rotate(-2deg)}
+    4%{transform: rotate(2deg)}
+    5%{transform: rotate(0deg)}
+    100%{transform: rotate(0deg)}
 }
