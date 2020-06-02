@@ -1,0 +1,57 @@
+/*Polices*/
+@import "./bases/polices";
+
+/*Variables (couleurs)*/
+@import "./utils/variables";
+
+/*Reset*/
+body {
+    margin: 0;
+    font-family: $font-default;
+}
+a {
+    text-decoration: none;
+}
+
+/*En-tête*/
+header {
+    background-color:$color_primary;
+    display: flex;
+    justify-content: center;
+
+    & a {
+        color: $color_secondary;
+        font-size: 4rem;
+    }
+}
+
+/*Pied de page*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color_primary;
+    color: $color_secondary;
+    font-size: 2rem;
+    padding: 20px 30px 10px 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
+
+.mentionslegales {
+    margin-left: 30px;
+    cursor: pointer;
+    animation: wiggle 3s infinite;
+}
+
+.contactez-nous {
+    margin-right: 30px;
+    cursor: pointer;
+    animation: wiggle 3s infinite;
+}
+
+/*Menu La Note Enchantée*/
+#bloc_page_lne {
+    background-color: $color_background_la_note;
+}
