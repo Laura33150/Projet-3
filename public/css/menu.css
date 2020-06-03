@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 /*Variables (couleurs)*/
 /*Reset*/
 body {
@@ -26,6 +26,19 @@ header {
 header a {
   color: #fdcb46;
   font-size: 4rem;
+}
+
+/*Menus*/
+.un_menu {
+  text-align: center;
+  margin: 0px 600px 0px 600px;
+  padding: 40px 80px 40px 80px;
+}
+
+.une_entree, .un_plat, .un_dessert {
+  display: flex;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
 }
 
 /*Pied de page*/
@@ -56,7 +69,48 @@ footer {
 
 /*Menu La Note Enchantée*/
 #bloc_page_lne {
+  color: #613a3e;
+}
+
+.menu_lne {
   background-color: #FCDFDB;
+}
+
+.menu_lne_title {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.entrees_lne_title, .plats_lne_title, .desserts_lne_title {
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.une_entree_lne, .un_plat_lne, .un_dessert_lne {
+  font-family: "Kalam", cursive;
+  font-size: 1.1rem;
+}
+.une_entree_lne_prix, .un_plat_lne_prix, .un_dessert_lne_prix {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.menu_lne_bas {
+  display: flex;
+  margin: 20px 180px 0px 140px;
+}
+.menu_lne_bas_img {
+  margin-bottom: 50px;
+}
+.menu_lne_bas_name {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=menu.css.map */

@@ -25,6 +25,19 @@ header {
     }
 }
 
+/*Menus*/
+.un_menu {
+    text-align: center;
+    margin: 0px 600px 0px 600px;
+    padding: 40px 80px 40px 80px;
+}
+
+.une_entree, .un_plat, .un_dessert {
+    display: flex;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
 /*Pied de page*/
 footer {
     display: flex;
@@ -53,5 +66,51 @@ footer {
 
 /*Menu La Note Enchantée*/
 #bloc_page_lne {
+    color: $color_la_note;
+}
+
+.menu_lne {
     background-color: $color_background_la_note;
 }
+
+.menu_lne_title {
+    font-family: $font-la_note_enchantee;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.entrees_lne_title, .plats_lne_title, .desserts_lne_title{
+font-family: $font-le_delice-la_palette;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.une_entree_lne, .un_plat_lne, .un_dessert_lne {
+    font-family: $font-le_delice-la_palette;
+    font-size: 1.1rem;
+
+    &_prix {
+        margin-left: auto;
+        font-weight: bold;
+    }
+
+}
+
+.menu_lne_bas {
+    display: flex;
+    margin: 20px 180px 0px 140px;
+
+    &_img {
+        margin-bottom: 50px;
+    }
+
+    &_name{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: $font-la_note_enchantee;
+    font-weight: bold;
+    }
+}
+
