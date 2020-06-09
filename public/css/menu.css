@@ -6,17 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Croissant+One&family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;900&display=swap");
 /*Variables (couleurs)*/
-/*Reset*/
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
+/*Header & Footer*/
 /*En-tête*/
 header {
   background-color: #579c87;
@@ -26,19 +18,6 @@ header {
 header a {
   color: #fdcb46;
   font-size: 4rem;
-}
-
-/*Menus*/
-.un_menu {
-  text-align: center;
-  margin: 0px 600px 0px 600px;
-  padding: 40px 80px 40px 80px;
-}
-
-.une_entree, .un_plat, .un_dessert {
-  display: flex;
-  text-align: center;
-  margin: 10px 0px 10px 0px;
 }
 
 /*Pied de page*/
@@ -67,6 +46,57 @@ footer {
   animation: wiggle 3s infinite;
 }
 
+/*Reset*/
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Menus*/
+.titre {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.un_menu {
+  text-align: center;
+  margin: 0px 600px 150px 600px;
+  padding: 40px 80px 40px 80px;
+  box-shadow: 1px 1px 15px #CCCCCC;
+}
+
+.une_entree,
+.un_plat,
+.un_dessert {
+  display: flex;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.entrees_title, .plats_title, .desserts_title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(to top, #990033 0%, #990033 0.2vw, transparent 0.2vw) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+.entrees_title:hover, .plats_title:hover, .desserts_title:hover {
+  background-size: 100% 100%;
+}
+
+.desserts {
+  margin-bottom: 130px;
+}
+
 /*Menu La Note Enchantée*/
 #bloc_page_lne {
   color: #613a3e;
@@ -75,7 +105,6 @@ footer {
 .menu_lne {
   background-color: #FCDFDB;
 }
-
 .menu_lne_title {
   font-family: "Caveat", cursive;
   font-size: 2.5rem;
@@ -83,17 +112,22 @@ footer {
   margin-bottom: 30px;
 }
 
-.entrees_lne_title, .plats_lne_title, .desserts_lne_title {
+.entrees_title_lne,
+.plats_title_lne,
+.desserts_title_lne {
   font-family: "Kalam", cursive;
-  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.une_entree_lne, .un_plat_lne, .un_dessert_lne {
+.une_entree_lne,
+.un_plat_lne,
+.un_dessert_lne {
   font-family: "Kalam", cursive;
   font-size: 1.1rem;
 }
-.une_entree_lne_prix, .un_plat_lne_prix, .un_dessert_lne_prix {
+.une_entree_lne_prix,
+.un_plat_lne_prix,
+.un_dessert_lne_prix {
   margin-left: auto;
   font-weight: bold;
 }
@@ -110,6 +144,136 @@ footer {
   margin-bottom: 40px;
   margin-top: 10px;
   font-family: "Caveat", cursive;
+  font-weight: bold;
+}
+
+/*Menu Le Chic à la Française*/
+.menu_lcf {
+  background-color: #fff5fe;
+}
+.menu_lcf_title {
+  margin-top: 30px;
+  font-family: "Croissant One", cursive;
+  font-size: 2.5rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e38a12+0,a768bc+51,b38cfa+100 */
+  background: #e38a12;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e38a12", endColorstr="#b38cfa", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 50px;
+}
+
+.entrees_title_lcf,
+.plats_title_lcf,
+.desserts_title_lcf {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+.entrees_title_lcf,
+.une_entree_lcf {
+  color: #c77513;
+}
+
+.plats_title_lcf,
+.un_plat_lcf {
+  color: #A56799;
+}
+
+.desserts_title_lcf,
+.un_dessert_lcf {
+  color: #6E4CCC;
+}
+
+.une_entree_lcf,
+.un_plat_lcf,
+.un_dessert_lcf {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.une_entree_lcf_prix,
+.un_plat_lcf_prix,
+.un_dessert_lcf_prix {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.un_plat_lcf {
+  text-align: left;
+}
+
+/*Menu Le Délice des Papilles*/
+.menu_ldp {
+  background-color: #f9f9f9;
+  font-family: "Kalam", cursive;
+}
+.menu_ldp_title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0229dd+0,0889fb+100 */
+  background: #0229dd;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #0229dd 0%, #0889fb 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #0229dd 0%, #0889fb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0229dd", endColorstr="#0889fb",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.une_entree_ldp, .un_plat_ldp, .un_dessert_ldp {
+  font-size: 1.1rem;
+}
+.une_entree_ldp_prix, .un_plat_ldp_prix, .un_dessert_ldp_prix {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/*Menu La Palette du Goût*/
+.menu_lpg {
+  background-color: #fdfffd;
+  font-family: "Kalam", cursive;
+}
+.menu_lpg_title {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#43973d+0,beff7f+100 */
+  background: #43973d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #43973d 0%, #beff7f 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #43973d 0%, #beff7f 100%);
+  /*  Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#43973d", endColorstr="#beff7f",GradientType=1 );
+  /* IE6-9 */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.une_entree_lpg, .un_plat_lpg, .un_dessert_lpg {
+  font-size: 1.1rem;
+}
+.une_entree_lpg_prix, .un_plat_lpg_prix, .un_dessert_lpg_prix {
+  margin-left: auto;
   font-weight: bold;
 }
 
