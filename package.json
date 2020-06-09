@@ -1,0 +1,17 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mainsass": "sass --watch ./sass/main.scss:./public/css/projet3.css ",
+    "menusass" : "sass --watch ./sass/menu.scss:./public/css/menu.css",
+    "prettier": "prettier --check"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}
