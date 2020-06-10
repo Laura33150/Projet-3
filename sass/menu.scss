@@ -29,7 +29,7 @@ a {
 
 .un_menu {
     text-align: center;
-    margin: 0px 600px 150px 600px;
+    margin: 0px 550px 150px 550px;
     padding: 40px 80px 40px 80px;
     box-shadow: 1px 1px 15px $color_box_shadow;
 }
@@ -42,9 +42,7 @@ a {
     margin: 10px 0px 10px 0px;
 }
 
-.entrees_title, .plats_title, .desserts_title {
-    font-size: 1.5rem;
-    margin-top: 20px;
+.entrees_title_lne_name, .plats_title_lne_name, .desserts_title_lne_name, .entrees_title_lcf_name, .plats_title_lcf_name, .desserts_title_lcf_name, .entrees_title_ldp_name, .plats_title_ldp_name, .desserts_title_ldp_name, .entrees_title_lpg_name, .plats_title_lpg_name, .desserts_title_lpg_name {
     margin-bottom: 20px;
     background: linear-gradient(to top, #990033 0%, #990033 0.2vw, transparent 0.2vw) no-repeat;
     background-size: 0 100%;
@@ -79,6 +77,12 @@ a {
 .desserts_title_lne {
     font-family: $font-le_delice-la_palette;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+    &_name {
+        font-size: 1.4rem;
+    }
 }
 
 .une_entree_lne,
@@ -103,7 +107,7 @@ a {
     }
 
     &_name {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-bottom: 40px;
         margin-top: 10px;
         font-family: $font-la_note_enchantee;
@@ -141,6 +145,12 @@ a {
 .desserts_title_lcf {
     font-family: $font-le_chic_menu;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    
+    &_name {
+        font-size: 1.1rem;
+    }
 }
 
 .entrees_title_lcf,
@@ -197,6 +207,17 @@ a {
     }
 }
 
+.entrees_title_ldp,
+.plats_title_ldp,
+.desserts_title_ldp {
+    display: flex;
+    justify-content: space-between;
+    
+    &_name {
+        font-size: 1.1rem;
+    }
+}
+
 .une_entree_ldp, .un_plat_ldp, .un_dessert_ldp {
     font-size: 1.1rem;
 
@@ -225,6 +246,17 @@ a {
          -webkit-background-clip:text;
          margin-bottom: 30px;
          margin-top: 50px;
+    }
+}
+
+.entrees_title_lpg,
+.plats_title_lpg,
+.desserts_title_lpg {
+    display: flex;
+    justify-content: space-between;
+    
+    &_name {
+        font-size: 1.1rem;
     }
 }
 
