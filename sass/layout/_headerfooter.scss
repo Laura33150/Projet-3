@@ -1,6 +1,6 @@
 /*En-tête*/
 header {
-    background-color:$color_primary;
+    background-color: $color_primary;
     display: flex;
     justify-content: center;
 
@@ -34,4 +34,28 @@ footer {
     margin-right: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;
+}
+
+/*Animation footer*/
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    3% {
+        transform: rotate(-2deg)
+    }
+
+    4% {
+        transform: rotate(2deg)
+    }
+
+    5% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
 }
