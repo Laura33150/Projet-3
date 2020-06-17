@@ -59,3 +59,23 @@ footer {
         transform: rotate(0deg)
     }
 }
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+
+    header a {
+        font-size: 3rem;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+    .mentionslegales {
+        margin-left: 8px;
+    }
+
+    .contactez-nous {
+        margin-right: 8px;
+    }
+}

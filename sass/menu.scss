@@ -168,6 +168,11 @@ a {
     }
 }
 
+.img_lcf {
+    width: 34%;
+    height: 10%;
+}
+
 .entrees_title_lcf,
 .plats_title_lcf,
 .desserts_title_lcf {
@@ -239,7 +244,10 @@ a {
         margin-top: 30px;
     }
 }
-
+.img_ldp {
+    width: 36%;
+    height: 30%;
+}
 .entrees_title_ldp,
 .plats_title_ldp,
 .desserts_title_ldp {
@@ -289,6 +297,11 @@ a {
     }
 }
 
+.img_lpg, .img_lpg_e {
+    width: 37%;
+    height: 40%;
+}
+
 .entrees_title_lpg,
 .plats_title_lpg,
 .desserts_title_lpg {
@@ -309,4 +322,197 @@ a {
         margin-left: auto;
         font-weight: bold;
     }
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1680px) {
+    .un_menu {
+        margin: 0px 400px 150px 400px;
+    }
+
+    .img_lcf {
+        width: 34%;
+        height: 12%;
+    }
+
+    .img_ldp {
+        width: 36%;
+        height: 30%;
+    }
+
+    .img_lpg, .img_lpg_e {
+        width: 37%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .un_menu {
+        margin: 0px 300px 150px 300px;
+    }
+}
+
+@media screen and (max-width: 1182px) {
+    .un_menu {
+        margin: 0px 100px 150px 100px;
+    }
+
+    .img_lcf {
+        padding-top: 10px;
+    }
+
+    .img_ldp {
+        padding-top: 6px;
+    }
+
+    .img_lpg, .img_lpg_e {
+        padding-top: 6px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .un_menu {
+        margin: 0px 20px 150px 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .titre {
+        font-size: 1.5rem;
+    }
+
+    .un_menu {
+        height: 1400px;
+        margin: 0px 0px 150px 0px;
+        padding: 20px 20px 20px 15px;
+    }
+
+    .une_entree,
+    .un_plat,
+    .un_dessert {
+        text-align: left;
+    }
+
+    .entrees_title_lne_img,
+    .plats_title_lne_img,
+    .desserts_title_lne_img,
+    .entrees_title_lpg_img,
+    .plats_title_lpg_img,
+    .desserts_title_lpg_img {
+        overflow: hidden;
+    }
+
+    /*La note enchantée*/
+    .menu_lne_title {
+        font-size: 2rem;
+    }
+
+    .entrees_title_lne_name,
+    .plats_title_lne_name,
+    .desserts_title_lne_name {
+        font-size: 1.2rem;
+        margin-left: 6px;
+    }
+
+    .une_entree_lne,
+    .un_plat_lne {
+        &_name {
+            margin-right: 8px;
+        }
+    }
+
+    .une_entree_lne_prix,
+    .un_plat_lne_prix {
+        padding-top: 17px;
+    }
+
+
+    .menu_lne_bas {
+        margin: 0px 0px 0px 30px;
+
+        &_name {
+            margin-top: 0px;
+        }
+    }
+
+    /*Le chic à la française*/
+    .menu_lcf_title {
+        font-size: 1.7rem;
+    }
+
+    .entrees_title_lcf_name,
+    .plats_title_lcf_name,
+    .desserts_title_lcf_name {
+        font-size: 1rem;
+    }
+
+    .une_entree_lcf,
+    .un_plat_lcf {
+        &_name {
+            font-size: 1rem;
+            margin-right: 8px;
+        }
+
+        &_prix {
+            font-size: 1rem;
+            padding-top: 17px;
+        }
+    }
+
+    .un_dessert_lcf {
+        font-size: 1rem;
+    }
+
+    /*Le délice des papilles*/
+    .menu_ldp_title {
+        font-size: 2.2rem;
+    }
+
+    .img_ldp {
+        padding-top: 19px;
+    }
+
+    .une_entree_ldp,
+    .un_plat_ldp,
+    .un_dessert_ldp {
+        &_name {
+            margin-right: 8px;
+        }
+    }
+
+    .un_plat_ldp {
+        &_prix {
+            padding-top: 19px;
+        }
+    }
+
+    /*La palette du goût*/
+    .menu_lpg_title {
+        font-size: 2.4rem;
+    }
+
+    .img_lpg_e {
+        padding-top: 8px;
+    }
+    .img_lpg {
+        padding-top: 19px;
+    }
+
+    .entrees_title_lpg_name,
+    .plats_title_lpg_name,
+    .desserts_title_lpg_name {
+        font-size: 1.1rem;
+    }
+
+    .une_entree_lpg,
+    .un_plat_lpg,
+    .un_dessert_lpg {
+        &_name {
+            font-size: 1rem;
+            margin-right: 8px;
+        }
+    }
+
 }

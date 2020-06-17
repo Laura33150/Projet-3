@@ -219,6 +219,8 @@ footer {
     margin-right: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;
+    background-color: $color_primary;
+    color: $color_secondary;
 }
 
 /*Animation du menu*/

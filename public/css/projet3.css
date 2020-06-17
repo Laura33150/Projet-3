@@ -201,6 +201,8 @@ footer {
   margin-right: 30px;
   cursor: pointer;
   animation: wiggle 3s infinite;
+  background-color: #579c87;
+  color: #fdcb46;
 }
 
 /*Animation du menu*/
