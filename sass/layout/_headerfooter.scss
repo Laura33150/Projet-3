@@ -15,7 +15,6 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: $color_primary;
-    color: $color_secondary;
     font-size: 2rem;
     padding: 20px 30px 10px 0px;
     position: fixed;
@@ -25,12 +24,14 @@ footer {
 }
 
 .mentionslegales {
+    color: $color_secondary;
     margin-left: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;
 }
 
 .contactez-nous {
+    color: $color_secondary;
     margin-right: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;

@@ -200,7 +200,6 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: $color_primary;
-    color: $color_secondary;
     font-size: 2rem;
     padding: 20px 30px 10px 0px;
     position: fixed;
@@ -210,6 +209,7 @@ footer {
 }
 
 .mentionslegales {
+    color: $color_secondary;
     margin-left: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;
@@ -219,7 +219,6 @@ footer {
     margin-right: 30px;
     cursor: pointer;
     animation: wiggle 3s infinite;
-    background-color: $color_primary;
     color: $color_secondary;
 }
 
@@ -332,6 +331,14 @@ footer {
     100% {
         transform: rotate(0deg)
     }
+}
+
+/*Mentions Légales*/
+#blocpage {
+    height: 900px;
+}
+.dernierparagraphe {
+    margin-bottom: 200px;
 }
 
 

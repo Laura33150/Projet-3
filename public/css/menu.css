@@ -25,7 +25,6 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #579c87;
-  color: #fdcb46;
   font-size: 2rem;
   padding: 20px 30px 10px 0px;
   position: fixed;
@@ -35,12 +34,14 @@ footer {
 }
 
 .mentionslegales {
+  color: #fdcb46;
   margin-left: 30px;
   cursor: pointer;
   animation: wiggle 3s infinite;
 }
 
 .contactez-nous {
+  color: #fdcb46;
   margin-right: 30px;
   cursor: pointer;
   animation: wiggle 3s infinite;
@@ -477,10 +478,7 @@ a {
 
   .entrees_title_lne_img,
 .plats_title_lne_img,
-.desserts_title_lne_img,
-.entrees_title_lpg_img,
-.plats_title_lpg_img,
-.desserts_title_lpg_img {
+.desserts_title_lne_img {
     overflow: hidden;
   }
 
