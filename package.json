@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mainsass": "sass --watch ./sass/main.scss:./public/css/projet3.css ",
-    "menusass" : "sass --watch ./sass/menu.scss:./public/css/menu.css",
+    "mainsass": "sass --watch ./sass/main.scss:./public/css/projet3.css --style compressed",
+    "menusass" : "sass --watch ./sass/menu.scss:./public/css/menu.css --style compressed",
     "prettier": "prettier --check"
   },
   "author": "",
