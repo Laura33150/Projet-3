@@ -337,6 +337,21 @@ footer {
 #blocpage {
     height: 900px;
 }
+
+.content {
+    margin: 20px;
+}
+
+.titre {
+    font-family: $font-default;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
 .dernierparagraphe {
     margin-bottom: 200px;
 }
@@ -482,4 +497,10 @@ footer {
     .contactez-nous {
         margin-right: 8px;
     }
+
+    /*Mentions Légales*/
+#blocpage {
+    height: 1400px;
+    width: 600px;
+}
 }
